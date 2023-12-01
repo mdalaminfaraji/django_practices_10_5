@@ -6,6 +6,26 @@
     <title>index</title>
   </head>
   <body>
+    <h1><a href="/"> about page</a></h1>
     <h1>Hello index {{a }} {{b}}</h1>
+    <h1>List of Books</h1>
+
+    <!-- Displaying the list of books -->
+    <ul>
+      {% for book in special_book %}
+      <li>{{book }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Genres</h2>
+
+    <!-- Displaying the string array -->
+    <ul>
+      {% for genre in genres %}
+      <li>{{ genre }}</li>
+      {% endfor %}
+    </ul>
+
+    <h1>Title: {{special_book.title}}</h1>
   </body>
 </html>
